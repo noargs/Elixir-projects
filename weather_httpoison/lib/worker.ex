@@ -4,6 +4,15 @@ defmodule WeatherHttpoison.Worker do
   of a given location from OpenWeatherMap and parse the results.
   """
 
+  def loop() do
+    receive do
+      {sender_pid, location} ->
+        send(sender_pid, {:ok, temperature_of(location)})
+      _-> # good practise to place match all at the end, to make sure emptying VM mailbox which otherwise make VM run out of memory
+        IO.puts "An error occurred while processing your request"
+    end
+    loop()
+  end
 
   def temperature_of(location) do
     location
