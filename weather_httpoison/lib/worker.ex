@@ -1,6 +1,7 @@
 defmodule WeatherHttpoison.Worker do
   @moduledoc """
-  `WeatherHttpoison.Worker` job is to fetch the temperature
+  `WeatherHttpoison.Worker` based on Httpoison library,
+  and its job to fetch the temperature through Httpoison.get request,
   of a given location from OpenWeatherMap and parse the results.
   """
 
