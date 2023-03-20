@@ -26,7 +26,7 @@ end
 ```
      
 - obtain API key from [OpenWeatherMap](https://openweathermap.org) 
-- run `iex -S mix` to start *iex* and type following commands
+- run `iex -S mix` to start *iex* and type following to get the temperature
 ```elixir
 WeatherHttpoison.Worker.temperature_of "Dublin, Ireland"
 ```
