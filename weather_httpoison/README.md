@@ -4,8 +4,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `weather_httpoison` to your list of dependencies in `mix.exs`:
+
 - Add following dependencies to your `mix.exs` file
       
 ```elixir
@@ -28,7 +27,5 @@ end
      
 - obtain API key from [OpenWeatherMap](https://openweathermap.org) 
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/weather_httpoison>.
+
 
