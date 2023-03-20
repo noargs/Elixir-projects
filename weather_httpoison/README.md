@@ -21,7 +21,7 @@ end
     
 ```elixir
 def application do
-  [applications: [:httpoison]]
+  [extra_applications: [:httpoison]]
 end
 ```
      
